@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+Adsocal OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
 	Name = "Made by clent",
@@ -40,7 +40,7 @@ PlayerSection:AddSlider({
 
 --Settings Tab--
 
-local SettingsTab = Window:MakeTab({
+local SettingsTab = Window:MakeTab({local SettingsTab = Window:MakeTab({
 	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -58,5 +58,22 @@ SettingsSection:AddButton({
 })
 
 --Settings End--
+--Ads tab--
+
+local SettingsTab = Window:MakeTab({
+        Name = Ads, 
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+}) 
+
+local SettingsSection = SettingsTab:AddSection({
+	Name = "Ads"
+}) 
+
+SettingsSection:AddButton({
+        Name = "Join our support server! | https://discord.com/invite/8HnUXgmFMv", 
+        end
+})
+
 
 OrionLib:Init() --UI Lib End
